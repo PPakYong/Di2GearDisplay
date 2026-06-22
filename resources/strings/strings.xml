@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<strings>
+  <string id="AppName">Di2 기어비</string>
+  <string id="FieldName">Di2 기어비</string>
+  <string id="NoSensor">Di2 없음</string>
+  <string id="GearRatio">기어비</string>
+</strings>

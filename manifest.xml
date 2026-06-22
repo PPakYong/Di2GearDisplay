@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<iq:manifest xmlns:iq="http://www.garmin.com/xml/connectiq" version="3">
+  <iq:application
+    entry="Di2GearDisplayApp"
+    id="a3d43e6e-1234-5678-abcd-di2geardisplay"
+    launcherIcon="@Drawables.LauncherIcon"
+    minSdkVersion="3.4.0"
+    name="@Strings.AppName"
+    type="datafield"
+    version="1.0.0"
+  >
+    <iq:products>
+      <iq:product id="edgeExplore2"/>
+    </iq:products>
+    <iq:permissions>
+      <iq:uses-permission id="Sensor"/>
+    </iq:permissions>
+    <iq:languages>
+      <iq:language>kor</iq:language>
+      <iq:language>eng</iq:language>
+    </iq:languages>
+    <iq:datafields>
+      <iq:datafield
+        field-count="1"
+        id="Di2GearField"
+        name="@Strings.FieldName"
+      />
+    </iq:datafields>
+  </iq:application>
+</iq:manifest>
