@@ -4,7 +4,7 @@ import Toybox.Application;
 module GearConfig {
 
     const DEFAULT_FRONT as Array<Number> = [50, 34] as Array<Number>;
-    const DEFAULT_REAR  as Array<Number> = [11,12,13,14,15,17,19,21,24,27,30] as Array<Number>;
+    const DEFAULT_REAR  as Array<Number> = [11,12,13,14,15,16,17,19,21,24,27,30] as Array<Number>;
 
     function getFrontTeeth() as Array<Number> {
         try {

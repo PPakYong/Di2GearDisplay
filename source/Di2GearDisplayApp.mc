@@ -20,7 +20,7 @@ class Di2GearDisplayApp extends WatchUi.DataField {
     hidden var mFieldHeight as Number = 0;
 
     hidden var mFrontTeeth  as Array<Number> = [50, 34] as Array<Number>;
-    hidden var mRearTeeth   as Array<Number> = [11,12,13,14,15,17,19,21,24,27,30] as Array<Number>;
+    hidden var mRearTeeth   as Array<Number> = [11,12,13,14,15,16,17,19,21,24,27,30] as Array<Number>;
 
     function initialize() {
         DataField.initialize();
