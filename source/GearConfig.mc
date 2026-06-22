@@ -26,16 +26,32 @@ module GearConfig {
         return DEFAULT_REAR;
     }
 
-    hidden function _parseTeeth(s as String) as Array<Number> {
-        var parts = s.split(",");
+    //! Monkey C's Lang.String has no split()/trim(), so parse the
+    //! comma-separated list character by character.
+    function _parseTeeth(s as String) as Array<Number> {
         var result = [] as Array<Number>;
-        for (var i = 0; i < parts.size(); i++) {
-            var trimmed = parts[i].trim();
-            if (trimmed.length() > 0) {
-                result.add(trimmed.toNumber());
+        var token = "";
+        var chars = s.toCharArray();
+        for (var i = 0; i < chars.size(); i++) {
+            var c = chars[i];
+            if (c == ',') {
+                _addToken(result, token);
+                token = "";
+            } else if (c != ' ') {
+                token += c.toString();
             }
         }
+        _addToken(result, token);
         return (result.size() > 0) ? result : DEFAULT_FRONT;
+    }
+
+    function _addToken(result as Array<Number>, token as String) as Void {
+        if (token.length() > 0) {
+            var n = token.toNumber();
+            if (n != null) {
+                result.add(n);
+            }
+        }
     }
 
     function calcRatio(frontT as Number, rearT as Number) as Float {

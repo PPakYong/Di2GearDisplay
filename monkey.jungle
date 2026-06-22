@@ -1,4 +1,4 @@
 project.manifest = manifest.xml
 
-edgeExplore2.sourcePath = $(base.sourcePath)
-edgeExplore2.resourcePath = $(base.resourcePath)
+edgeexplore2.sourcePath = $(base.sourcePath)
+edgeexplore2.resourcePath = $(base.resourcePath)
