@@ -5,7 +5,7 @@
             <iq:product id="edgeexplore2"/>
         </iq:products>
         <iq:permissions>
-            <iq:uses-permission id="Sensor"/>
+            <iq:uses-permission id="BluetoothLowEnergy"/>
         </iq:permissions>
         <iq:languages>
             <iq:language>eng</iq:language>
